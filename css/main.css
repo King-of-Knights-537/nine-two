@@ -28,9 +28,6 @@ p{
     font-size: 22px;
     letter-spacing: 1px;
 }
-p > mark{
-    line-height: 40px;
-}
 span.block{
     display: block;
 }
@@ -92,7 +89,7 @@ header .navbar-collapse{
     padding-right: 0;
 }
 header .container-fluid{
-    max-width: 1400px;
+    max-width: 1600px;
 }
 header .navbar-expand-lg .navbar-nav {
     flex-direction: column;
@@ -102,7 +99,7 @@ header .navbar-brand{
     height: inherit;
 }
 header .navbar img.logo{
-    width: 70px;
+    width: 160px;
 }
 header .navbar a.nav-link{
     font-size: 20px; font-weight: 600;
@@ -327,7 +324,7 @@ p.article{
     letter-spacing: 1px;
 }
 
-button.link, button.yellow-border{
+button.link{
     padding: 12px 27px; margin: 0 1em;
     width: 240px; border-radius: 40px;
     font-weight: 400; font-size: 21.5px;
@@ -343,18 +340,32 @@ button.link{
     background: #9450c8; border: none;
     color: #FFF;
 }
-button.yellow-border{
-    background: none; border: 1.5px solid #FFA047;
-    color: #FFA047;
-}
 
 button.link:hover{
     background: #6dc44c;
 }
+button.third-button{
+    width: 260px;
+}
+button.third-button, button.forth-button{
+    background: #075E54;
+}
+button.forth-button div{
+    width: 80%;
+}
+button.third-button:hover,
+button.forth-button:hover{
+    background: #128C7E;
+}
 
-button.yellow-border:hover{
-    border: 1.5px solid #ff7247;
-    color: #ff7247;
+button.to-top{
+    background: #9450c8; color: #FFF;
+    border-radius: 100%; border: none;
+    width: 55px; height: 55px;
+    position: absolute; right: 7em; bottom: 3em;
+}
+button.to-top i{
+    font-size: 33px;
 }
 
 #third h2{
@@ -997,7 +1008,7 @@ footer .info p{
     }
     header .navbar img.logo {
         position: absolute;
-        top: 18px;
+        top: 13px;
         left: 0;
         right: 0;
         margin-left: auto;
@@ -1026,7 +1037,7 @@ footer .info p{
         width: 100%;
     }
     header .navbar img.logo {
-        width: 150px;
+        width: 100px;
     }
     section {
         padding: 2.5em 0;
@@ -1124,6 +1135,16 @@ footer .info p{
         width: 180px;
         font-size: 15px;
         margin-bottom: 2em;
+    }
+    button.third-button{
+        width: 200px;
+    }
+    button.to-top{
+        width: 45px; height: 45px;
+        position: absolute; right: 3em; 
+    }
+    button.to-top i{
+        font-size: 25px;
     }
     #second .content .section-1 .declaration, 
     #second .content .section-2 .declaration {
@@ -1330,9 +1351,6 @@ footer .info p{
     #second .content .section-1{
         margin-bottom: 3.5em;
     }
-    #second .content .section-1 .logos .logo {
-       
-    }
     #second .content .section-1 .logos .logo img {
         width: 100%;
     }
@@ -1369,7 +1387,7 @@ footer .info p{
     }
 }
 
-@media only screen and (min-width: 765px) and (max-width: 1600px){
+@media only screen and (min-width: 765px) and (max-width: 1675px){
 
     div.logos{
         text-align: center;
@@ -1395,12 +1413,15 @@ footer .info p{
 
 }
 
-@media only screen and (max-width: 1700px){
+@media only screen and (min-width: 1790px){
     
-    .carousel-inner-slider .info .object-logo img {
-        border-radius: 100%;
-        width: 55px;
-        height: 55px;
+    div.logo {
+        margin: 0 1.25em;
+        width: 250px;
+        margin-bottom: 1em;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

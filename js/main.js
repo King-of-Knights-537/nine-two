@@ -88,7 +88,7 @@ gsap.fromTo('#opening p', {
     duration: 1, ease: "power2.out",
 });
 
-gsap.fromTo('#second div.logo.logo-1', { 
+gsap.fromTo('#second div.logo', { 
     y: 200, autoAlpha: 0,
 },{
     y: 0, autoAlpha: 1, 
@@ -96,50 +96,6 @@ gsap.fromTo('#second div.logo.logo-1', {
     scrollTrigger:{
         trigger: 'section#second',
         start: 'top top'
-    }
-});
-
-gsap.fromTo('#second div.logo.logo-2', { 
-    y: 200, autoAlpha: 0,
-},{
-    y: 0, autoAlpha: 1, delay: .5,
-    duration: 1, ease: "bounce.out",
-    scrollTrigger:{
-        trigger: 'section#second',
-        start: 'top top'
-    }
-});
-
-gsap.fromTo('#second div.logo.logo-3', { 
-    y: 200, autoAlpha: 0,
-},{
-    y: 0, autoAlpha: 1, delay: .75,
-    duration: 1, ease: "bounce.out",
-    scrollTrigger:{
-        trigger: 'section#second',
-        start: 'top top'
-    }
-});
-
-gsap.fromTo('#second div.logo.logo-4', { 
-    y: 200, autoAlpha: 0,
-},{
-    y: 0, autoAlpha: 1, delay: 1,
-    duration: 1, ease: "bounce.out",
-    scrollTrigger:{
-        trigger: 'section#second h2:nth-child(1)',
-        start: 'top'
-    }
-});
-
-gsap.fromTo('#second div.logo.logo-5', { 
-    y: 200, autoAlpha: 0,
-},{
-    y: 0, autoAlpha: 1, delay: 1.25,
-    duration: 1, ease: "bounce.out",
-    scrollTrigger:{
-        trigger: 'section#second h2:nth-child(1)',
-        start: 'top'
     }
 });
 
@@ -161,9 +117,38 @@ gsap.fromTo('.second-button', {
     duration: .25, ease: "power2.out",
     scrollTrigger:{
         trigger: 'section#fifth',
-        start: 'bottom'
+        start: 'center'
     }
 });
+
+gsap.fromTo('.third-button', { 
+    autoAlpha: 0, y: 50
+}, {
+    autoAlpha: 1, y:0,
+    duration: .25, ease: "power2.out",
+    scrollTrigger:{
+        trigger: 'section.sixth-two',
+        start: 'center'
+    }
+});
+
+gsap.fromTo('.forth-button', { 
+    autoAlpha: 0, y: 50
+}, {
+    autoAlpha: 1, y: 0,
+    duration: .25, ease: "power2.out",
+    scrollTrigger:{
+        trigger: 'section#seventh',
+        start: 'bottom 30%'
+    }
+});
+
+gsap.fromTo('button.to-top', { 
+    y: 0
+},{
+    y: -12, duration: .725, repeat: -1, 
+    yoyo: true, ease: Power2.easeInOut,
+})
 
 gsap.fromTo('#eighth img.right-image', { 
     x: 200, autoAlpha: 0,
@@ -195,7 +180,7 @@ let observer = new IntersectionObserver((entries, observer) => {
       
       setTimeout(() => {
         entry.target.classList.add('animated')
-      }, 4000)
+      }, 2000)
       
       observer.unobserve(entry.target)
     }
