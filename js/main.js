@@ -156,7 +156,7 @@ gsap.fromTo('#eighth img.right-image', {
     x: 0, autoAlpha: 1, delay: .75,
     duration: 1, ease: "bounce.out",
     scrollTrigger:{
-        trigger: 'section#eighth img.right-image',
+        trigger: 'section#eighth .advantage article',
         start: 'top'
     }
 });
