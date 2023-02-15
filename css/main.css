@@ -961,7 +961,7 @@ footer .info p{
 @media only screen and (max-width: 765px){
 
     p{
-        font-size: 15px;
+        font-size: 18px;
     }
     header .navbar{
         padding-top: 5px;
@@ -1064,7 +1064,7 @@ footer .info p{
         font-size: 15px;
     }
     #second .content .section-1 .logos{
-        position: relative; left: 1em;
+        position: relative;
         margin-top: 1.2em;
     }
     #second .content .section-1 .logos .logo {
@@ -1087,7 +1087,7 @@ footer .info p{
         margin-right: auto;
     }
     p.article{
-        width: 85%; font-size: 15px;
+        width: 85%; font-size: 18px;
         margin-top: -2em;
     }
     button.link, button.yellow-border {
@@ -1172,10 +1172,6 @@ footer .info p{
         letter-spacing: .5px;
         top: -2px;
     }
-    footer .info p {
-        font-size: 13px;
-        line-height: 1.25;
-    }
     footer .info .paragraphes {
         margin-left: 0;
     }
@@ -1196,9 +1192,6 @@ footer .info p{
     }
     .carousel-inner-slider .info h3 {
         font-size: 24px; letter-spacing: .25px;
-    }
-    .carousel-inner-slider .info p{
-        font-size: 16px; letter-spacing: .25px;
     }
 
 }
