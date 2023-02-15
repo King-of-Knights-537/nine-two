@@ -267,7 +267,7 @@ mark.animate.animated {
     z-index: 1;
   }
   .carousel-inner{
-    height: 450px;
+    height: 500px;
   }
 
 }

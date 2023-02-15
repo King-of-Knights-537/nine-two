@@ -99,14 +99,25 @@ gsap.fromTo('#second div.logo', {
     }
 });
 
+gsap.fromTo('.zero-button', { 
+    autoAlpha: 0, y: 50
+}, {
+    autoAlpha: 1, y:0,
+    duration: .25, ease: "power2.out",
+    scrollTrigger:{
+        trigger: 'section#third',
+        start: 'center 50%'
+    }
+});
+
 gsap.fromTo('.first-button', { 
     autoAlpha: 0, y: 50
 }, {
     autoAlpha: 1, y:0,
     duration: .25, ease: "power2.out",
     scrollTrigger:{
-        trigger: 'section#forth',
-        start: 'center'
+        trigger: 'section#forth .content',
+        start: 'top'
     }
 });
 
@@ -116,18 +127,18 @@ gsap.fromTo('.second-button', {
     autoAlpha: 1, y: 0,
     duration: .25, ease: "power2.out",
     scrollTrigger:{
-        trigger: 'section#fifth',
-        start: 'center'
+        trigger: 'section#fifth .content',
+        start: 'top'
     }
 });
 
 gsap.fromTo('.third-button', { 
     autoAlpha: 0, y: 50
 }, {
-    autoAlpha: 1, y:0,
+    autoAlpha: 1, y:0, delay: 1,
     duration: .25, ease: "power2.out",
     scrollTrigger:{
-        trigger: 'section.sixth-two',
+        trigger: 'section.sixth-one .content',
         start: 'center'
     }
 });
@@ -135,11 +146,11 @@ gsap.fromTo('.third-button', {
 gsap.fromTo('.forth-button', { 
     autoAlpha: 0, y: 50
 }, {
-    autoAlpha: 1, y: 0,
+    autoAlpha: 1, y: 0, delay: .5,
     duration: .25, ease: "power2.out",
     scrollTrigger:{
         trigger: 'section#seventh',
-        start: 'bottom 30%'
+        start: 'center'
     }
 });
 
