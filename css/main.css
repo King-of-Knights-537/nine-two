@@ -95,14 +95,14 @@ header .container-fluid{
     max-width: 1400px;
 }
 header .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 header .navbar-brand{
     height: inherit;
 }
 header .navbar img.logo{
-    width: 207px;
+    width: 70px;
 }
 header .navbar a.nav-link{
     font-size: 20px; font-weight: 600;
@@ -893,11 +893,7 @@ footer .info p{
     header .container-fluid {
         width: 95%;
     }
-    header .navbar img.logo {
-        width: 150px;
-    }
     header .navbar-collapse {
-        flex-basis: 71% !important;
         padding-left: 0; padding-right: 0;
     }
     header .navbar-expand-lg .navbar-nav .nav-link {
@@ -905,20 +901,27 @@ footer .info p{
         padding-left: 0;
     }
     header .navbar a.nav-link {
-        font-size: 18px;
+        font-size: 15px;
         /* letter-spacing: 1px; */
         text-decoration: none;
         position: relative;
         top: 3px;
     }
+    .navbar-collapse {
+        flex-basis: 60% !important;
+    }
 
 }
 
-@media only screen and (min-width: 765px) and (max-width: 1050px){
+@media only screen and (min-width: 765px) and (max-width: 1180px){
 
+    #opening .jumbotron{
+        height: 600px;
+    }
     #opening .jumbotron .content {
-        margin-left: 1em; 
+        margin-left: 3em; 
         margin-top: 0em;
+        width: 70% !important;
     }
     h1.top-topic {
         font-size: 45px;
@@ -926,9 +929,34 @@ footer .info p{
         letter-spacing: 1px;
     }
     p.sub-title {
-        font-size: 30px;
-        line-height: 40px;
+        line-height: 30px;
         letter-spacing: 1px;
+        font-size: 22px;
+    }
+
+    .advantage img{
+        margin: auto;
+        width: 45%;
+    }
+    .advantage img.right-image{
+        margin-top: 2.5em;
+    }
+    .advantage img.left-image{
+        margin-bottom: 2.5em;
+    }
+    article.content-2 {
+        width: 80%;
+        margin: auto;
+    }
+    .faq{
+        width: 100% !important;
+    }
+    .accordion{
+        margin: auto; margin-top: -1.25em;
+        padding-top: 0 !important;
+    }
+    .accordion-button{
+        font-size: 22px;
     }
 
 }
@@ -966,9 +994,6 @@ footer .info p{
     header .navbar{
         padding-top: 5px;
         padding-bottom: 5px;
-    }
-    header .navbar-nav{
-        flex-direction: column !important;
     }
     header .navbar img.logo {
         position: absolute;
@@ -1299,17 +1324,17 @@ footer .info p{
 @media only screen and (min-width: 1130px) and (max-width: 1670px){
    
     #second .content .section-1, #second .content .section-2 {
-        width: 530px; height: inherit;
+         height: inherit;
         text-align: left; padding-bottom: 2em;
     }
     #second .content .section-1{
         margin-bottom: 3.5em;
     }
     #second .content .section-1 .logos .logo {
-        width: 65px; height: 65px;
+       
     }
     #second .content .section-1 .logos .logo img {
-        width: 52px;
+        width: 100%;
     }
     
 }
@@ -1344,13 +1369,10 @@ footer .info p{
     }
 }
 
-@media only screen and (min-width: 765px) and (max-width: 1030px){
+@media only screen and (min-width: 765px) and (max-width: 1600px){
 
-    footer .info .paragraphes {
-        padding-right: 0;
-        width: 70%;
-        padding-top: 1em;
-        padding-bottom: 1em;
+    div.logos{
+        text-align: center;
     }
 
 }
@@ -1365,11 +1387,10 @@ footer .info p{
 
 }
 
-@media only screen and (max-width: 1670px){
+@media only screen and (min-width: 765px){
 
-    #second .content::after,
-    #second .content .section-2::after {
-        display: none;
+    .navbar-nav {
+        flex-direction: row !important; 
     }
 
 }
@@ -1380,14 +1401,6 @@ footer .info p{
         border-radius: 100%;
         width: 55px;
         height: 55px;
-    }
-
-}
-
-@media only screen and (min-width: 401px) and (max-width: 1919px){
-    
-    img.cloud-1, img.cloud-2, img.cloud-3{
-        display: none;
     }
 
 }
